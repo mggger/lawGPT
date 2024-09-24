@@ -14,7 +14,8 @@ class StreamlitLLMCallback(BaseLLMCallback):
         """Handle when a new token is generated."""
         super().on_llm_new_token(token)
         self.text += token
-        self.container.markdown(self.text)
+        escaped_text = fr"{self.text}".replace("$", r"\$")
+        self.container.markdown(escaped_text)
 
     def on_llm_start(self, serialized: dict[str, Any], prompts: list[str], **kwargs: Any) -> Any:
         """Called when LLM starts running."""

@@ -162,3 +162,4 @@ cython_debug/
 .idea/
 lancedb/*
 lancedb/
+ragtest/settings.yaml

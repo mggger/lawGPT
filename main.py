@@ -94,7 +94,11 @@ def load_chat_page():
                 result = asyncio.run(perform_search())
 
             response = result.response
-            st.session_state.messages.append({"role": "assistant", "content": response})
+            st.session_state.messages.append({"role": "assistant", "content": response.replace("$", r"\$")})
+            if 'sources' in result.context_data.keys():
+                with st.expander("View Source Data"):
+                    st.write(result.context_data['sources'])
+
 
 def load_file_management_page():
     st.title("File Management")
