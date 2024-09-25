@@ -133,11 +133,11 @@ Example response for lineal foot rules charges:
 
 | Carrier Name | Lineal Foot Rules Charges | Notes |
 | ------------ | ------------------------- | ----- |
+| XPO          | [Charge info if available] | [Any relevant notes] |
 | A Duie Pyle  | [Charge info if available] | [Any relevant notes] |
 | AAA Cooper   | [Charge info if available] | [Any relevant notes] |
 | ArcBest      | [Charge info if available] | [Any relevant notes] |
 | ...          | ...                       | ... |
-| XPO          | [Charge info if available] | [Any relevant notes] |
 
 Remember, your primary goal is to provide accurate, carrier-specific information based on the available data. Always prioritize precision and completeness over generalization.
 """
