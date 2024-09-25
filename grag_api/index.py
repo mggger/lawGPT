@@ -10,7 +10,6 @@ from graphrag.index.graph.extractors.graph.prompts import GRAPH_EXTRACTION_PROMP
 from graphrag.index.graph.extractors.summarize.prompts import SUMMARIZE_PROMPT
 from graphrag.index.progress import NullProgressReporter
 from graphrag.index.run import run_pipeline_with_config
-from grag_api.extract.pdf_extract import PDFProcessor
 
 
 class GraphRAGIndexer:
