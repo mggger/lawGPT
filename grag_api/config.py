@@ -15,7 +15,7 @@ DEFAULT_CONFIG = {
     "llm": {
         "api_key": os.environ.get("OPENAI_API_KEY"),
         "type": "openai_chat",
-        "model": "gpt-4o",
+        "model": "gpt-4o-mini",
         "model_supports_json": True,
         "concurrent_requests": 8,
         "max_retries": 30
