@@ -94,9 +94,6 @@ For tables:
 - If neither lineal application nor linear foot rules are found for a carrier, clearly state that both are not applicable (N/A) for that specific carrier.
 
 ### Comprehensive Carrier Listing
-
-- When asked about "carriers" or multiple carriers without specifying names, always provide information for ALL of the following carriers, especially XPO:
-  A Duie Pyle, AAA Cooper, ArcBest, Averitt Express, Central Transport, Day and Ross, Daylight, Dayton Freight, Estes Express, Forward Air, Old Dominion Freight Line, RL Carriers, RoadRunner, Saia, Southeastern Freight Lines, Southwestern Motor Transport, TForce Freight, Ward Trucking, XPO
 - Include every carrier name in your response, even if the requested information is not available or not applicable for some carriers.
 - For carriers where the requested information is not available or not applicable, include the carrier name and clearly state "Information not available" or "Not applicable" for that specific carrier.
 
@@ -134,9 +131,6 @@ Example response for lineal foot rules charges:
 | Carrier Name | Lineal Foot Rules Charges | Notes |
 | ------------ | ------------------------- | ----- |
 | XPO          | [Charge info if available] | [Any relevant notes] |
-| A Duie Pyle  | [Charge info if available] | [Any relevant notes] |
-| AAA Cooper   | [Charge info if available] | [Any relevant notes] |
-| ArcBest      | [Charge info if available] | [Any relevant notes] |
 | ...          | ...                       | ... |
 
 Remember, your primary goal is to provide accurate, carrier-specific information based on the available data. Always prioritize precision and completeness over generalization.
@@ -256,8 +250,8 @@ def main():
     with st.sidebar:
         selected = option_menu(
             "Main Menu",
-            ["Chat", "File Management", "Train"],
-            icons=["chat", "folder", ""],
+            ["Chat", "File Management"],
+            icons=["chat", "folder"],
             menu_icon="cast",
             default_index=0,
         )
@@ -273,8 +267,6 @@ def main():
         load_chat_page()
     elif selected == "File Management":
         load_file_management_page()
-    elif selected == "Train":
-        train_page()
 
 
 if __name__ == "__main__":
